@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="/img/logo/logo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <title>About &#9679 Aditya Azka</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-navbar">
+                <div class="top-navbar1">
+                    <ul class="top-navbar2">
+                        <a class="logo-text">Aditya Azka</a>
+                    </ul>
+                </div>
+                
+                <div id="myNavbar" class="navbar-top-responsive">
+                    <span class="navbar-top-responsive2"
+                        style="
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-family: Times New Roman;
+                        font-size: 35px;
+                        cursor:pointer;
+                        color: white;
+                        align-items: center;
+                        display: flex;
+                        
+                        "
+                        onclick="openNav()">&#9776;   <img id="myImg" style="width: 55px; height: 50px; padding-left: 10px; padding-top: 5px; align-items: center;" src="/img/logo/logo2.png">
+                    </span>
+                    </div>
+                
+                <nav>
+                    <ul class="nav-link">
+                        <a href="index.html">Home</a>
+                        <a class="active" href="about.html">About</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </ul>
+
+                </nav>
+                <div id="mySidenav" class="navbar-top-side-responsive">
+                    <a class="navbar-top-side-responsive-button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="navbar-top-side-responsive-button"  href="index.html">Home</a>
+                    <a class="navbar-top-side-responsive-button" href="about.html">About</a>
+                    <a class="navbar-top-side-responsive-button" href="blog.html">Blog</a>
+                    <a class="navbar-top-side-responsive-button" href="gallery.html">Gallery</a>
+                    <a class="navbar-top-side-responsive-button" href="contact.html">Contact</a>
+                  </div>
+            </div>
+        </header>
+    </body>
+
+    <main>
+        <div id="myMain" class="main">
+            <div class="title">
+                <h1>About</h1>
+            </div>
+            <div class="about">
+                <div class="about-row">
+                    <img style="margin: auto;" src="/img/album/2/adit3.jpg">
+                    <p>
+                        <b>Aditya Fadillah Azka</b> merupakan mahasiswa pada program studi Akuntansi di Universitas Trilogi. Saat ini sedang mencari cara untuk menikmati hidup dengan membuat yang mudah menjadi sulit.<br><br>
+
+                        Aktif berorganisasi di Himpunan Mahasiswa Akuntansi Trilogi atau HIMAKSI Trilogi sebagai Anggota Departemen HRD (2020-2021) dan saat ini sebagai Kepala Departemen Kegiatan (2021-saat ini).<br><br>
+                        
+                        Beberapa kegiatan kepanitiaan yang pernah diikut oleh Adit sebagai berikut:<br><br>
+                        
+                        - PKKMB Universitas Trilogi 2021<br>
+                        - PEMIRA Universitas Trilogi 2021<br>
+                        - 3rd NCAFA<br>
+                        - 3 Action Part XII<br>
+                        - 3 Action Part XIII<br>
+                        dan beberapa kegiatan lainnya</p>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("mySidenav");
+        var sideNavbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+        var sticky = sideNavbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            sideNavbar.classList.add("sticky")
+        
+          } else {
+            navbar.classList.remove("sticky");
+            sideNavbar.classList.remove("sticky");
+        
+          }
+        }
+        
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "160px";
+          document.getElementById("myNavbar").style.marginLeft= "160px";
+          document.getElementById("myMain").style.marginLeft= "180px";
+          document.getElementById("myImg").style.marginLeft= "12px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("myNavbar").style.marginLeft= "0";
+          document.getElementById("myMain").style.marginLeft= "auto";
+          document.getElementById("myImg").style.marginLeft= "0px";
+        }
+    </script>
+</html>
+

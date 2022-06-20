@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  
+
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
+    }
+
+    /* Create four equal columns that floats next to each other */
+    .bottomnavbar-column-1 {
+      float: left;
+      width: 25%;
+      height: 100%;
+      padding: 10px;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+
+    .bottomnavbar-column-1 a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .bottomnavbar-column-2 {
+      float: left;
+      width: 35%;
+      height: 100%;
+      padding: 10px;
+      padding-left: 30px;
+    }
+
+    .bottomnavbar-column-1 a:hover {
+      font-weight: bold;
+    }
+
+    /* Clear floats after the columns */
+    .bottomnavbar-row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .bottomnavbar {
+      background-color: black;
+      color: white;
+    }
+
+    .ig, .ld, .yt {
+              background-color: black;
+              color: white;
+              text-decoration: none;
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 481px) {
+      .bottomnavbar-column-1 {
+        width: 100%;
+      }
+
+      .bottomnavbar-column-2 {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<footer class="bottomnavbar">
+    <div class="bottomnavbar-row">
+      <div class="bottomnavbar-column-1">
+        <h2>Navigation</h2>
+        <p><a href="index.html">Home</a></p>
+        <p><a href="index.html">About</a></p>
+        <p><a href="index.html">Blog</a></p>
+        <p><a href="index.html">Gallery</a></p>
+
+      </div>
+      <div class="bottomnavbar-column-2">
+        <h2>Contact</h2>
+        <p><a href="https://www.instagram.com/afadillahazka" class="ig btn">
+          <i class="fa fa-instagram fa-fw"></i> @afadillahazka
+         </a></p>
+        <p><a href="https://linkedin/id/afadillahazka" class="ld btn">
+          <i class="fa fa-linkedin fa-fw"></i> Aditya Fadillah Azka
+        </a></p>
+        <p><a href="https://youtube.com/channel/UCj_PLUt2sLNJdJ0dX3hCFTg" class="yt btn">
+            <i class="fa fa-youtube fa-fw"></i> Aditya Fadillah Azka
+          </a></p>
+        <p>&nbsp</p>
+      </div>
+    </div>
+  </footer>
+
+</html>

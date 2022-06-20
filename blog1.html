@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="/img/logo/logo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <title>Day 1 #30DaysWritingChallenge &#9679 Aditya Azka</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-navbar">
+                <div class="top-navbar1">
+                    <ul class="top-navbar2">
+                        <a class="logo-text">Aditya Azka</a>
+                    </ul>
+                </div>
+                
+                <div id="myNavbar" class="navbar-top-responsive">
+                    <span class="navbar-top-responsive2"
+                        style="
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-family: Times New Roman;
+                        font-size: 35px;
+                        cursor:pointer;
+                        color: white;
+                        align-items: center;
+                        display: flex;
+                        
+                        "
+                        onclick="openNav()">&#9776;   <img id="myImg" style="width: 55px; height: 50px; padding-left: 10px; padding-top: 5px; align-items: center;" src="/img/logo/logo2.png">
+                    </span>
+                    </div>
+                
+                <nav>
+                    <ul class="nav-link">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a class="active" href="blog.html">Blog</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </ul>
+
+                </nav>
+                <div id="mySidenav" class="navbar-top-side-responsive">
+                    <a class="navbar-top-side-responsive-button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="navbar-top-side-responsive-button"  href="index.html">Home</a>
+                    <a class="navbar-top-side-responsive-button" href="about.html">About</a>
+                    <a class="navbar-top-side-responsive-button" href="blog.html">Blog</a>
+                    <a class="navbar-top-side-responsive-button" href="gallery.html">Gallery</a>
+                    <a class="navbar-top-side-responsive-button" href="contact.html">Contact</a>
+                  </div>
+            </div>
+        </header>
+    </body>
+
+    <main>
+        <div id="myMain" class="main">
+            <div class="title">
+                <h1>Day 1 #30DaysWritingChallenge</h1>
+            </div>
+            <div class="blog">
+                <div class="blog-row">
+                    <div class="blog-column">
+                    <img src="/img/blogpic/blogpic1.jpg">
+                    <h1>Describe yourself with 5 words</h1>
+                    <p><br>20 tahun. Pria.  Minang. Mahasiswa. Akuntansi.<br><br>
+                        Hal tersebut cukup menjelaskan diri saya secara garis besar. Tidak pula juga bahwa kalimat di atas menjelaskan segalanya.<br><br>
+                        Oke, mari kita bahas satu per satu.<br><br>
+                        Tahun 2022 ini, saya berkepala dua. Beban tanggung jawab menjadi besar, entah kepada diri sendiri, keluarga, teman, kerabat, Tuhan. Semakin hari semakin banyak hal yang saya pelajari dari melihat, mendengar, dan mengamati. Tak jarang saya juga sering berdiskusi kepada orang yang lebih tua usianya dibanding saya. <br><br>
+                        Pria. Ya, saya seorang laki-laki. Lahir sebagai penerus tanggung jawab kepala keluarga dan menjadi kepala keluarga nantinya. Meski baru berumur 20 tahun, saya kira tak ada salahnya juga berpikir ke depan. Ya, kan?<br><br>
+                        Minang. Berasal dari keluarga berbudaya Minang yang cukup kental, tak jarang beberapa acara besar keluarga saya ikuti. Saya pernah mengikuti acara pernikahan kakak sepupu saya dari Papa, namanya kak Amna Aufa. Ada juga kegiatan budaya lainnya yang pernah saya ikuti, namun pernikahan pada adat Minang inilah hal yang sangat menonjol pada budaya saya.<br><br>
+                        Mahasiswa. Menjadi mahasiswa pada Agustus 2020. Tahun dimana pendidikan mengalami transisi dari luring menjadi daring. Banyak yang harus saya pelajari mengenai pembelajaran secara daring. Tapi dahulu saya pernah menggunakan media pembelajaran daring, seperti Zenius, Ruangguru, dan Quipper. Bedanya daring kali ini merupakan pembelajaran dua arah. Menjadi mahasiswa di Universitas Trilogi yang cukup dekat dengan rumah, pastinya saya tidak perlu mengeluarkan biaya lebih untuk tinggal sendiri di tempat yang berbeda.<br><br>
+                        Akuntansi. Yap, saya dahulu adalah siswa IPA. Mengambil akuntansi merupakan tindakan yang cukup nekat memang, karena saya tidak pernah belajar ekonomi sama sekali di bangku sekolah sebelumnya. Saya rasa tidak ada salahnya juga belajar hal yang baru, meskipun harus memulai dari awal.
+                        
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("mySidenav");
+        var sideNavbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+        var sticky = sideNavbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            sideNavbar.classList.add("sticky")
+        
+          } else {
+            navbar.classList.remove("sticky");
+            sideNavbar.classList.remove("sticky");
+        
+          }
+        }
+        
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "160px";
+          document.getElementById("myNavbar").style.marginLeft= "160px";
+          document.getElementById("myMain").style.marginLeft= "180px";
+          document.getElementById("myImg").style.marginLeft= "12px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("myNavbar").style.marginLeft= "0";
+          document.getElementById("myMain").style.marginLeft= "auto";
+          document.getElementById("myImg").style.marginLeft= "0px";
+        }
+    </script>
+</html>
+

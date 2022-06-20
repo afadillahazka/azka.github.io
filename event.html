@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="icon" href="/img/logo/logo2.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <title>Event &#9679 Aditya Azka</title>
+    </head>
+    <body>
+        <header>
+            <div class="top-navbar">
+                <div class="top-navbar1">
+                    <ul class="top-navbar2">
+                        <a class="logo-text">Aditya Azka</a>
+                    </ul>
+                </div>
+                
+                <div id="myNavbar" class="navbar-top-responsive">
+                    <span class="navbar-top-responsive2"
+                        style="
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-family: Times New Roman;
+                        font-size: 35px;
+                        cursor:pointer;
+                        color: white;
+                        align-items: center;
+                        display: flex;
+                        
+                        "
+                        onclick="openNav()">&#9776;   <img id="myImg" style="width: 55px; height: 50px; padding-left: 10px; padding-top: 5px; align-items: center;" src="/img/logo/logo2.png">
+                    </span>
+                    </div>
+                
+                <nav>
+                    <ul class="nav-link">
+                        <a href="index.html">Home</a>
+                        <a class="active" href="Event.html">Event</a>
+                        <a href="about.html">About</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="contact.html">Contact</a>
+                    </ul>
+
+                </nav>
+                <div id="mySidenav" class="navbar-top-side-responsive">
+                    <a class="navbar-top-side-responsive-button" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a class="navbar-top-side-responsive-button"  href="index.html">Home</a>
+                    <a class="navbar-top-side-responsive-button" href="event.html">Event</a>
+                    <a class="navbar-top-side-responsive-button" href="about.html">About</a>
+                    <a class="navbar-top-side-responsive-button" href="blog.html">Blog</a>
+                    <a class="navbar-top-side-responsive-button" href="gallery.html">Gallery</a>
+                    <a class="navbar-top-side-responsive-button" href="contact.html">Contact</a>
+                  </div>
+            </div>
+        </header>
+    </body>
+
+    <main>
+        <div id="myMain" class="main">
+            <div class="title">
+                <h1>Event </h1>
+            </div>
+            <div class="about">
+                <div class="about-row">
+                    <h2>#2 Integrity and Complience Tas Force Seminar</h2>
+                    <img style="margin: auto; margin-bottom: 10px; margin-top: 10px; width: 100%;" src="/img/event/2.jpg">
+                    <p>
+                        The IFRS Foundation has announced the creation of its new International Sustainability Standards Board (ISSB) that will develop a comprehensive global baseline of high-quality sustainability disclosure standards to meet investors' information needs.<br/><br/>
+
+                        As the member of Integrity and Compliance Task Force B20 Indonesia, IAI in collaboration with the B20, IFAC, and the ISSB is organizing a webinar on Global Baseline for Business and Investors: B20 – IAI – IFAC – ISSB Outreach on June 22, 2022 at 2.00-4.30 PM Jakarta.<br/><br/>
+
+                        The discussion will provide the opportunity for the business community and stakeholders to engage with ISSB and its upcoming standard. To encourage business community and other stakeholders to provide inputs on the exposure drafts IFRS Sustainability Disclosure Standard. <br/>
+                        
+                        <br/>
+                        <a style="text-decoration: none; color: rgba(0, 0, 0, 0.63); font-weight: bolder ;margin-bottom: 10px;" href="blog1.html">DAFTAR SEKARANG <span>&#10097;</span></a>
+                    </p>
+                    <hr width="100%;">
+                    <div class="about-row">
+                        <h2>#1 Integrity and Complience Tas Force Seminar</h2>
+                        <img style="margin: auto; margin-bottom: 10px; margin-top: 10px; width: 100%;" src="/img/event/2.jpg">
+                        <p>
+                            The IFRS Foundation has announced the creation of its new International Sustainability Standards Board (ISSB) that will develop a comprehensive global baseline of high-quality sustainability disclosure standards to meet investors' information needs.<br/><br/>
+    
+                            As the member of Integrity and Compliance Task Force B20 Indonesia, IAI in collaboration with the B20, IFAC, and the ISSB is organizing a webinar on Global Baseline for Business and Investors: B20 – IAI – IFAC – ISSB Outreach on June 22, 2022 at 2.00-4.30 PM Jakarta.<br/><br/>
+    
+                            The discussion will provide the opportunity for the business community and stakeholders to engage with ISSB and its upcoming standard. To encourage business community and other stakeholders to provide inputs on the exposure drafts IFRS Sustainability Disclosure Standard. <br/>
+                            
+                            <br/>
+                            <a style="text-decoration: none; color: rgba(0, 0, 0, 0.63); font-weight: bolder ;" href="blog1.html">DAFTAR SEKARANG <span>&#10097;</span></a>
+                        </p>       
+                    <hr width="100%;">
+
+            </div>
+        </div>
+        <table>
+            <th style="height: 150px;"></th>
+        </table>
+    </main>
+    
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("mySidenav");
+        var sideNavbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+        var sticky = sideNavbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+            sideNavbar.classList.add("sticky")
+        
+          } else {
+            navbar.classList.remove("sticky");
+            sideNavbar.classList.remove("sticky");
+        
+          }
+        }
+        
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "160px";
+          document.getElementById("myNavbar").style.marginLeft= "160px";
+          document.getElementById("myMain").style.marginLeft= "180px";
+          document.getElementById("myImg").style.marginLeft= "12px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("myNavbar").style.marginLeft= "0";
+          document.getElementById("myMain").style.marginLeft= "auto";
+          document.getElementById("myImg").style.marginLeft= "0px";
+        }
+    </script>
+</html>
+
